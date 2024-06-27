@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">    
 </head>
 <body>
+
+    <div id="perloader">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
     <div class="Hadding">
         <h1>3D Hover Effect</h1>
     </div>
@@ -23,5 +33,15 @@
             <div class="item"><img src="img6.jpg" alt=""></div>
         </div>
     </main>
+
+    <script>
+
+        var loader = document.getElementById("perloader")
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+
+    </script>
 </body>
 </html>
